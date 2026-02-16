@@ -1,11 +1,11 @@
-# 个人作品集网站
+# Portfolio Website
 
-这是一个纯 HTML / CSS / JavaScript 的作品集单页网站模板。
+This is a pure HTML/CSS/JavaScript portfolio single-page website template.
 
-## 使用方式
+## How to Use
 
-直接在浏览器中打开 `index.html` 即可预览。
+Simply open `index.html` in your browser to preview.
 
-## 替换内容
+## Replace Content
 
-请将页面中的示例文字替换为你的真实信息、项目与联系方式。
+Please replace the sample text on the page with your real information, projects, and contact details. 
