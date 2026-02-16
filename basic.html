@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zekai Wang Portfolio</title>
+    <style>
+        /* 1. 基础样式重置 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* 防止出现滚动条 */
+        }
+
+        /* 2. 背景层：使用线性渐变和混合模式模拟多边形质感 */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #f5f5f5;
+            /* 这里你可以替换成你那张低多边形的图片地址 */
+            background-image: 
+                linear-gradient(120deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.2) 100%),
+                url('https://www.transparenttextures.com/patterns/cubes.png'); /* 临时纹理模拟 */
+            background-size: cover;
+        }
+
+        /* 3. 导航栏样式 */
+        nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around; /* 对应图中散开的布局 */
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
+
+        /* 4. 文字链接样式 */
+        a {
+            color: #d32f2f; /* 还原图中的红色 */
+            text-decoration: underline; /* 还原下划线 */
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        /* 5. 中央居中的文字 */
+        .center-menu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* 针对图片左侧那抹彩色的处理（示意） */
+        .accent-color {
+            position: absolute;
+            left: 0;
+            top: 30%;
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(to right, #ff8a65, #4db6ac, #0277bd);
+            filter: blur(50px);
+            opacity: 0.4;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="accent-color"></div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Design</a>
+        <a href="#">gallery</a>
+        <a href="#">About me</a>
+    </nav>
+
+    <div class="center-menu">
+        <a href="#">design</a>
+        <a href="#">gallery</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+p {
+
+  background-color: #DDE0E3;    /* Light gray */
+  
+}
+
+body {
+  text-align: center;
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;  
+}
+
+h1 {
+  padding: 50px;
+  /* border: 1px solid #5D6063; */
+  border-bottom: 1px solid #5D6063;
+  background-color: #DDE0E3; 
+}
+
+em, strong {
+  background-color: #B2D6FF;    /* Light blue */
+}
+
+div {
+  /* [Existing Declarations] */
+  width: 100px;
+}
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  
+  width: 200px;
+  box-sizing: border-box;  /* Add this */
+  margin: 20px auto;
+}
+
