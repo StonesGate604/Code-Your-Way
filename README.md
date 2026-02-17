@@ -4,7 +4,7 @@ This is a pure HTML/CSS/JavaScript portfolio single-page website template.
 
 ## How to Use
 
-Simply open `index.html` in your browser to preview.
+all the real file are in mywebsite_transformed 
 
 ## Replace Content
 
