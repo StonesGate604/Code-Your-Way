@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Diatype", "ABCDiatype", "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 .menu {
   height: 100px;
   background-color: #B2D6FF;    /* Medium blue */

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Diatype", "ABCDiatype", "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 p {
 
   background-color: #DDE0E3;    /* Light gray */

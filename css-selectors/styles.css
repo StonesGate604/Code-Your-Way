@@ -3,6 +3,10 @@
   font-style: italic;
 }
 
+body {
+  font-family: "Diatype", "ABCDiatype", "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 /* p:first-of-type {
   color: #7E8184;
   font-style: italic;

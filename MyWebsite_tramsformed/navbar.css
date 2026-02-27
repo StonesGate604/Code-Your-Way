@@ -1,0 +1,54 @@
+.site-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  min-height: 60px;
+  padding: 18px 30px;
+	background: #f5f5f5;
+ 
+}
+
+#navbar-root {
+  min-height: 100px;
+}
+
+.site-nav {
+  font-family: "Diatype", "ABCDiatype", "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.site-nav a {
+  color: #ff3333;
+  font-size: clamp(9px, 1.5vw, 14px);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #b93c55;
+  text-decoration-thickness: 3px;
+}
+
+.site-nav a.is-active {
+  text-decoration-thickness: 3px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-evenly;
+  width: 40%;
+}
