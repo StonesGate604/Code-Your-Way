@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div id="navbar-root"></div>
+    <div class="page">
+        <div class="page-layout">
+            <div class="page-content">
+                <main>
+                    <h1>Gallery</h1>
+                    <div class="gallery" id="gallery"></div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="galleryData.js"></script>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
