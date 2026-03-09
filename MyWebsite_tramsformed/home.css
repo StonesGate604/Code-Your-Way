@@ -1,4 +1,3 @@
-
 * {
   padding-right: 0%;
   margin: 0%;
@@ -13,10 +12,29 @@ body {
   font-family: "Diatype", "ABCDiatype", "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
+/* 🌟 新增：将 p5.js 自动生成的 canvas 固定在网页最底层 */
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* 🌟 新增：确保导航栏可以被正常点击 */
+#navbar-root {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
 .page {
   min-height: calc(100vh - 120px);
   width: 100vw;
-  background-color: #c6c6c6;
+  /* 🌟 修改：去掉原本的 #c6c6c6 背景色，改为透明，让底层动画透出来 */
+  background-color: transparent; 
+  /* 🌟 新增：允许鼠标穿透这个容器，从而触发底层动画的探照灯效果 */
+  pointer-events: none;
 }
 
 .page-layout,
@@ -33,7 +51,7 @@ main {
 }
 
 .home-links {
-  position:absolute;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -48,4 +66,6 @@ main {
   text-align: center;
   text-decoration: underline;
   font-size: clamp(12px, 2vw, 18px);
+  /* 🌟 新增：恢复链接的鼠标交互，确保你的 design 和 gallery 能够被点击 */
+  pointer-events: auto; 
 }
