@@ -23,6 +23,8 @@ body {
 	grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.2fr);
 	gap: 40px;
 	align-items: center;
+	border-bottom: 1px solid #C5C5C5;
+	padding-bottom: 40px;
 }
 
 .project-media {
@@ -33,7 +35,7 @@ body {
 .media-item {
 	display: block;
 	width: 100%;
-	max-width: 220px;
+	max-width: 380px;
 	aspect-ratio: 16 / 9;
 	border: 0;
 	background: transparent;
@@ -59,21 +61,21 @@ body {
 }
 
 .design- {
-	display: inline-block;
+	display: inline-flexbox;
 	font-weight: bold;
 	color: #111;
 	text-decoration: underline;
-	margin-bottom: 10px;
-	font-size: 0.8rem;
+	margin-bottom: 40px;
+	font-size: 1.25rem;
 }
 
 p.design--1 {
-	margin-top: 10px;
+	margin-top: 50px;
 	line-height: 1.55;
 	color: #6d6d6d;
-	font-size: 0.7rem; 
+	font-size: 1rem; 
 	/* bodysize */
-	letter-spacing: 0.05em;
+	/* letter-spacing: 0.05em; */
 }
 
 @media (max-width: 800px) {
